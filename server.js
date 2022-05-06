@@ -6,6 +6,11 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.get('/t', (req, res) => {
+    res.send('Hello World!')
+  })
+
+
 app.get('/times', (req, res) => res.send(showTimes()))
 
 showTimes = () => {
@@ -16,7 +21,7 @@ showTimes = () => {
     }
     return result;
   }
-  
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
